@@ -1,0 +1,9 @@
+<li [ngClass]="{'list-group-item':true,
+                'list-group-item-success':i > 0,
+                'list-group-item-danger':i<0}">
+  <h4> {{postName}}</h4>
+  <p style="text-align: right">{{lastUpdate | date:"M/d/yy h:mm a"}}</p>
+  <p>{{postContent}}</p>
+  <button class="btn btn-success" style="margin: 5px;" (click)="Add()">Love it </button>
+  <button class="btn btn-danger" style="margin: 5px;" (click)="Remove()">Don't Love it</button>
+</li>
